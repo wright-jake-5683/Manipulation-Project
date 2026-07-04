@@ -210,11 +210,11 @@ public:
         RCLCPP_INFO(LOGGER, "Closing Gripper...");
         // setup the gripper joint value
         RCLCPP_INFO(LOGGER, "Preparing Gripper Value...");
-        setup_joint_value_gripper(+0.65);
+        setup_joint_value_gripper(+0.675);
         // plan and execute the trajectory
         RCLCPP_INFO(LOGGER, "Planning Gripper Action...");
         plan_trajectory_gripper();
-        RCLCPP_INFO(LOGGER, "Executing Gripper Action...");
+        RCLCPP_INFO(LOGGER, "Executing Gripper 80Action...");
         execute_trajectory_gripper();
         RCLCPP_INFO(LOGGER, "Gripper Closed");
 
